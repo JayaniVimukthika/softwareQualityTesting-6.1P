@@ -14,6 +14,20 @@ public class ConditionalLoopsUtilsTest {
 			 Assert.assertEquals(3, result);
 			 System.out.println("Test sumWithForLoop: passed");
 		 }
+		
+		 @Test
+		 public void testSumWithForLoopNegativeInput() {
+			 int result = conditionalLoopsUtil.sumWithForLoop(-2);
+			 Assert.assertEquals(0, result); 
+			 System.out.println("Test sumWithForLoop with a negative number as input: passed");
+		 }
+		 
+		 @Test
+		 public void testSumWithForLoopZeroInput() {
+			 int result = conditionalLoopsUtil.sumWithForLoop(0);
+			 Assert.assertEquals(0, result);
+			 System.out.println("Test sumWithForLoop with zero as the input: passed");
+		 }
 		 
 		@Test
 		 public void testIsPrimeWithLoopPrimeNumber() {
@@ -28,21 +42,7 @@ public class ConditionalLoopsUtilsTest {
 			 Assert.assertFalse(result);
 			 System.out.println("Test isPrimeWithLoop with a non-prime number: passed");
 		}
-		
 		 
-		 @Test
-		 public void testSumWithForLoopNegativeInput() {
-			 int result = conditionalLoopsUtil.sumWithForLoop(-2);
-			 Assert.assertEquals(0, result); 
-			 System.out.println("Test sumWithForLoop with a negative number as input: passed");
-		 }
-		 
-		 @Test
-		 public void testSumWithForLoopZeroInput() {
-			 int result = conditionalLoopsUtil.sumWithForLoop(0);
-			 Assert.assertEquals(0, result);
-			 System.out.println("Test sumWithForLoop with zero as the input: passed");
-		 }
 		 
 		 @Test
 		 public void testIsPrimeWithLoopOneAsInput() {
